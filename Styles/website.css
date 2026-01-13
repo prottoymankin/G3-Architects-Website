@@ -62,6 +62,10 @@
   max-width: 542px;
 }
 
+img {
+  vertical-align: middle;
+}
+
 /* Header CSS */
 .header {
   background-color: rgba(255, 144, 14, 0.1);
@@ -120,7 +124,6 @@
 
 #banner_image {
   width: 100%;
-  vertical-align: middle;
 }
 
 /* Feature Section CSS */
@@ -148,7 +151,78 @@
   margin-top: 32px;
 }
 
+/* About Feature Section CSS */
+.about_feature {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+.about_feature .section_title {
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+
+.feature_card__container {
+  margin-top: 30px;
+}
+
+.feature_card {
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.feature_card h4  {
+  color: #131313;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature_card p {
+  color: #727272;
+  line-height: 26px;
+}
+
+.about_feature__image {
+  position: relative;
+}
+
+.about_feature__image img {
+  width: 100%;
+}
+
+.experience_tag {
+  display: inline-block;
+  background-color: #FF900E;
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 46px 42px;
+  position: absolute;
+  left: -92px;
+  bottom: -77px;
+  width: fit-content;
+  text-align: center;
+}
+
+.experience_tag h2 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.experience_tag p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
 /* Fact Section CSS */
+.fact {
+    margin-top: 160px !important;
+  }
+
 .fact_card__container {
   display: grid;
   gap: 24px;
@@ -250,6 +324,25 @@
     font-size: 2rem;
   }
 
+  .about_feature {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .experience_tag h2 {
+    font-size: 2rem;
+  }
+
+  .experience_tag p {
+    font-size: 1.25rem;
+  }
+
+  .experience_tag {
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%);
+  }
+
   .fact_card__container {
     grid-template-columns: 1fr;
   }
@@ -275,6 +368,25 @@
   .sponser_companies {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+
+  .about_feature {
+    flex-direction: column;
+    gap: 100px;
+  }
+  
+  .experience_tag {
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%);
+  }
+
+  .experience_tag h2 {
+    font-size: 2.5rem;
+  }
+
+  .experience_tag p {
+    font-size: 1.5rem;
   }
 }
 
